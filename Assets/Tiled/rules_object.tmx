@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="8" height="8" tilewidth="32" tileheight="32" nextobjectid="4">
+ <tileset firstgid="1" name="BoundsTilesheet" tilewidth="32" tileheight="32" tilecount="16" columns="4">
+  <image source="spritesheets/bounds_tilesheet.png" width="128" height="128"/>
+ </tileset>
+ <layer name="regions" width="8" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,2,0,2,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="input_Objects" width="8" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,11,0,6,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="output_MappedObjects">
+  <object id="2" name="Spawn Point" x="32" y="32" width="32" height="32">
+   <properties>
+    <property name="type" value="SpawnPoint"/>
+   </properties>
+  </object>
+  <object id="3" name="Powerup" x="96" y="32" width="32" height="32">
+   <properties>
+    <property name="powerup" value="Freeze"/>
+    <property name="type" value="Powerup"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
